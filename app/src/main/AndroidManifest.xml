@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.trustbank">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CONNECTIVITY_CHANGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.trustbank.sadhnambank.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name=".util.MBank"
+        android:allowBackup="false"
+        android:debuggable="false"
+        android:exported="false"
+        android:fullBackupContent="false"
+        android:icon="${appIcon}"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:resizeableActivity="false"
+        android:roundIcon="${appIcon}"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeBlue"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning,HardcodedDebugMode"
+        tools:replace="android:allowBackup"
+        tools:targetApi="q">
+
+
+        <activity
+            android:name=".activity.MandateCancelActivity"
+            android:label="Mandate Cancellation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.RegisterComplaintsActivity"
+            android:label="Register Complaints"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ComplaintManagementActivity"
+            android:exported="true"
+            android:label="Complaint Management"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.BBPSComplaintRegisterActivity" />
+        <activity
+            android:name=".activity.UPIIdToAccountNumberTransacion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UPIToUPITransactions"
+            android:label="UPI Transaction"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.UPIActivityMenu" />
+        <activity
+            android:name=".activity.BBPSDisplayBillFetchedDetailsActivity"
+            android:label="Bill Pay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BBPSCreateDynamicBillPayActivity"
+            android:label="Fetch Bill"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BBPSDynamicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BBPSBillerSearchListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BBPSBillerCategoryActivity"
+            android:label="Bill Pay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StopChequeRequestActivity"
+            android:label="@string/lbl_stop_cheque" />
+        <activity
+            android:name=".activity.ChequeStatusActivity"
+            android:label="@string/lbl_cheque_status" />
+        <activity
+            android:name=".activity.SelfTransferToAccountActivity"
+            android:label="@string/lbl_self_transfer_acc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TransactionLimitSubmitActivity"
+            android:label="@string/lbl_activity_transaction_limit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TransactionLimitActivity"
+            android:label="@string/lbl_activity_transaction_limit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ResetTPinActivity"
+            android:label="@string/txt_reset_tpin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:label="@string/lbl_activity_settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChangePINSActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TPinActivateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- android:name=".activity.SplashScreenActivity" -->
+        <activity
+            android:name=".activity.WelcomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FrmServer"
+            android:label="@string/lbl_set_server"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VerifyMobileNumber"
+            android:label="@string/lbl_verify_mobile_no"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivateProfileInfo"
+            android:label="@string/lbl_activate_profile_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PinActivation"
+            android:label="@string/lbl_activate_mpin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LockActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AccountsActivity"
+            android:label="@string/lbl_accounts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AccountDetailsActivity"
+            android:label="@string/lbl_acc_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BalanceEnquiryActivity"
+            android:label="@string/lbl_bal_enquiry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BalanceEnquiryCBSActivity"
+            android:label="@string/lbl_bal_enquiry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MiniStatementActivity"
+            android:label="@string/lbl_mini_stmt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MiniStatementCBSActivity"
+            android:label="@string/lbl_mini_stmt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChequebookRequestActivity"
+            android:label="@string/lbl_checkbook_request"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StatementRequestActivity"
+            android:label="@string/lbl_stmt_request"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LastFiveImpsTransactionActivity"
+            android:label="@string/lbl_last_five_trans"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LastFiveImpsTransactionCBSActivity"
+            android:label="@string/lbl_last_five_trans"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShowMMIDActivity"
+            android:label="@string/lbl_show_mmid"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShowMMIDCBSActivity"
+            android:label="@string/lbl_show_mmid"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PPSRequestActivity"
+            android:label="@string/lbl_pps_request"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FrmPPSServiceRequestEnquiry"
+            android:label="@string/lbl_pps_request_enquiry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FrmPPSServiceRequestEnquiryDetails"
+            android:label="@string/lbl_pps_request_enquiry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NeftEnquiryActivity"
+            android:label="@string/lbl_neft_enquiry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NeftTransactionListActivity"
+            android:label="@string/lbl_neft_transaction_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NeftTransactionDetailsActivity"
+            android:label="@string/lbl_neft_transaction_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LocateAtmsActivity"
+            android:label="@string/lbl_locate_atm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FundsTransferMenu"
+            android:label="@string/lbl_fund_transfer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WithinBankActivity"
+            android:label="@string/lbl_within_bank_transfer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.IMPSTransferToMobile"
+            android:label="@string/lbl_imps_transfer_mob"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.IMPSTransferToAccount"
+            android:label="@string/lbl_imps_transfer_acc"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.NEFTTransferToAccount"
+            android:label="@string/lbl_neft_transfer_acc"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ContactUsActivity"
+            android:label="@string/lbl_contact_us"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BranchesActivity"
+            android:label="@string/lbl_branches"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.FAQActivity"
+            android:label="@string/lbl_activity_faq"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ManageBeneficiaryActivity"
+            android:label="@string/lbl_manage_beneficiary"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.BeneficiaryTypeListActivity"
+            android:label="@string/lbl_types_beneficiary"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.OtpVerificationActivity"
+            android:label="@string/lbl_fund_transfer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:label="@string/lbl_about_us"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maps.MapsActivity"
+            android:label="@string/lbl_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".activity.FrmAccountStatement"
+            android:label="@string/lbl_activity_account_statement"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.FrmAccountStatementDetails"
+            android:label="@string/lbl_activity_account_statement"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.BlockDebitCardActivity"
+            android:label="@string/lbl_activity_block_debit_card"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.BlockDebitCardSwitchActivity"
+            android:label="@string/lbl_activity_block_debit_card"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.DebitCardPinGenerationActivity"
+            android:label="@string/txt_debit_card_pin_generate"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.RegisterClientId"
+            android:label="@string/txt_register_another_client"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ImpsCheckTransactionRequest"
+            android:label="@string/title_imps_transactions_status"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${google_maps_key}" />
+        <!--
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.trustbank.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <receiver
+            android:name=".receiver.MySMSBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.NetworkChangeReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".util.barcode.BarcodeCaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".util.barcode.ScannedBarcodeActivity"
+            android:label="Scan &amp; Pay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BBPSTransactionStatusActivity"
+            android:exported="false"
+            android:label="BBPS Transaction Status"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ComplaintHistoryListActivity"
+            android:exported="false"
+            android:label="BBPS Complaint List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ComplaintHistory"
+            android:exported="false"
+            android:label="Track Complaints"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UPICollectActivity"
+            android:exported="false"
+            android:label="Collect Money"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GetQRUPIActivity"
+            android:exported="false"
+            android:label="Display QR Code"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activity.UpiQRDisplayActivity"
+            android:label="Display QR Code"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.CreateQRUPIActivity"
+            android:label="Create New QR Code"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

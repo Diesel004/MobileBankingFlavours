@@ -1,0 +1,7 @@
+<resources>
+
+
+    <!--<string name="set_server_IP">https://122.252.239.150:3005</string>  &lt;!&ndash; VMUCB Bank Live=====>&ndash;&gt;-->
+    <string name="set_server_IP">https://anuradhaurbanbank.com:1053</string>  <!--- Anuradha live Bank =====>-->
+
+</resources>

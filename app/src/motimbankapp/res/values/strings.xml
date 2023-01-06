@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string name="set_server_IP">https://103.247.55.146:2120</string> <!--== MOTIIII UAT ==-->
+</resources>

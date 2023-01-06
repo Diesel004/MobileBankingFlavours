@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/imageButtonClose_Id"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/transparant"
+        android:contentDescription="@null"
+        android:padding="6dp"
+        android:src="@drawable/ic_close" />
+
+
+    <RelativeLayout
+        android:id="@+id/scrollViewMainContainer_Id"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+</RelativeLayout>

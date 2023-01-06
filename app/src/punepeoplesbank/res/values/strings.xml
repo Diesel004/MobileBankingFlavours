@@ -1,0 +1,3 @@
+<resources>
+        <string name="set_server_IP">https://115.112.111.134:6080</string>  <!--  //=====PPC Client Side NEW UAT-->
+</resources>

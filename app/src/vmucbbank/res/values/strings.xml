@@ -1,0 +1,11 @@
+<resources>
+
+<!--<string name="set_server_IP">https://59.95.101.93:4530</string> =====TRUST DEMO VAPT IP====-->
+<!--<string name="set_server_IP">https://59.95.101.93:8024</string>   &lt;!&ndash;//====Trust VAPT side==========//&ndash;&gt;-->>
+<!--<string name="set_server_IP">https://122.252.239.150:3005</string>  &lt;!&ndash; VMUCB Bank Live=====>&ndash;&gt;-->
+    <string name="set_server_IP">https://mbank.vmcbank.com:8181</string>  <!-- - VMUCB Bank UAT=====-->>
+<!--<string name="set_server_IP">https://mbank.vmcbank.com:9998</string> --> <!--- VMUCB Bank Live (Note : 1.0.1 with this version update with ip and port , domian will configure after this version)=====>-->
+
+
+</resources>
+

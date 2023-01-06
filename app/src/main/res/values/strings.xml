@@ -1,0 +1,473 @@
+<resources>
+
+    <string name="lbl_accounts">Accounts</string>
+    <string name="lbl_bal_enquiry">Balance Enquiry</string>
+    <string name="lbl_acc_details">Account Details</string>
+    <string name="lbl_mini_stmt">Mini Statement</string>
+    <string name="lbl_checkbook_request">Chequebook Request</string>
+    <string name="lbl_stmt_request">Statement Request</string>
+    <string name="lbl_last_five_trans">Last 5 IMPS Transactions</string>
+    <string name="lbl_show_mmid">Show MMID</string>
+    <string name="lbl_pps_request">Positive Pay Request</string>
+    <string name="lbl_pps_request_enquiry">Positive Pay Request Enquiry</string>
+    <string name="lbl_neft_enquiry">NEFT Enquiry</string>
+    <string name="lbl_neft_transaction_list">NEFT Transaction List</string>
+    <string name="lbl_neft_transaction_details">NEFT Transaction Details</string>
+    <string name="lbl_fund_transfer">Fund Transfer</string>
+
+    <string name="lbl_within_bank_transfer">Within Bank Transfer</string>
+    <string name="lbl_imps_transfer_mob">IMPS Transfer To Mobile</string>
+    <string name="lbl_imps_transfer_acc">IMPS Transfer To Account</string>
+    <string name="lbl_neft_transfer_acc">NEFT Transfer To Account</string>
+    <string name="lbl_self_transfer_acc">Self Transfer To Account</string>
+    <string name="lbl_cheque_status">Cheque Status</string>
+    <string name="lbl_stop_cheque">Stop Cheque Request</string>
+    <string name="lbl_transactions">Transactions</string>
+    <string name="lbl_loans">Loans</string>
+    <string name="lbl_locate_atm">Locate ATM</string>
+    <string name="lbl_contact_us">Contact Us</string>
+    <string name="lbl_branches">Branches</string>
+    <string name="lbl_verify_mobile_no">Verify Mobile Number</string>
+    <string name="lbl_set_server">Set Server</string>
+    <string name="lbl_activate_profile_info">Activate Profile Info</string>
+    <string name="lbl_activate_mpin">Activate MPIN</string>
+    <string name="lbl_manage_beneficiary">Manage Beneficiaries</string>
+    <string name="lbl_types_beneficiary">Beneficiary Types</string>
+    <string name="lbl_about_us">About Us</string>
+    <string name="lbl_activity_maps">Nearest Atm\s</string>
+    <string name="lbl_activity_faq">FAQs</string>
+    <string name="lbl_activity_account_statement">mPassBook</string>
+    <string name="lbl_activity_settings">Settings</string>
+    <string name="lbl_activity_transaction_limit">Transaction Limit</string>
+    <string name="lbl_activity_block_debit_card">Block Debit Card</string>
+
+    <!--TextView-->
+    <string name="txt_colon">:</string>
+    <string name="txt_activate_profile">Activate User Profile</string>
+    <string name="txt_activate_mpin">Activate MPIN</string>
+    <string name="txt_activate_tpin">Activate TPIN</string>
+    <string name="txt_verify_otp">Verify OTP</string>
+    <string name="txt_verify_mob_no">Verify Mobile Number</string>
+    <string name="txt_registration">Registration Code</string>
+    <string name="txt_sim_in_slot_one">Registered Mobile Number should be in SIM SLOT ONE</string>
+    <string name="txt_new_to_app">New to app? Generate secure pin for Authentication.</string>
+    <string name="txt_forgot_password">Forgot Password</string>
+    <string name="txt_have_pin_login">Already have pin? Login</string>
+    <string name="txt_acc_no">Account Number</string>
+    <string name="txt_leaf_count">Leaf Count</string>
+    <string name="txt_cheque_type">Cheque Type</string>
+    <string name="txt_no_of_checkbook">No Of ChequeBook</string>
+    <string name="txt_from_date">From Date</string>
+    <string name="txt_to_date">To Date</string>
+    <string name="txt_beneficiary">Beneficiary</string>
+    <string name="txt_ref_no">Reference No.</string>
+    <string name="txt_avail_bal">AVL Bal</string>
+    <string name="txt_show_mmid_msg_first">MMID allocated to your account is </string>
+    <string name="txt_delete_mmid_msg_first">has been disabled for Account No. </string>
+    <string name="txt_show_mmid_msg_second">You can send and receive money through IMPS Fund Transfer option.</string>
+    <string name="txt_select_state">Select State</string>
+    <string name="txt_select_city">Select City/Taluka</string>
+    <string name="txt_search_location_pin">Search list by location, PIN code</string>
+    <string name="txt_address">Address:</string>
+    <string name="txt_head_office_address">Head Office Address</string>
+    <string name="txt_email_addr">Email Address</string>
+    <string name="txt_contact_num">Contact Number</string>
+    <string name="txt_website">Website</string>
+    <string name="txt_resend_otp_msg">Resend OTP will enable in 60 seconds</string>
+    <string name="txt_resend_otp">Resend OTP</string>
+    <string name="txt_welcome_title1">\u25CF  Send money,Balance enquiry, Mini Statement</string>
+    <string name="txt_welcome_title2">\u25CF  Cheque book request, Cheque Status, PPS Request</string>
+    <string name="txt_welcome_title3">\u25CF  Locate bank branches and nearby ATMs</string>
+    <string name="txt_welcome_title4">\u25CF  Manage beneficiaries, multiple A/c\'s</string>
+    <string name="txt_verify_mob_no_note">Register Your Profile using the mobile number you have registered with your bank (for mobile alerts, IMPS, mobile banking,etc.)</string>
+    <string name="txt_verify_mob_no_note2">To confirm your mobile number, we need to send an SMS from your phone.</string>
+    <string name="txt_std_charges_apply">*Standard charges may apply</string>
+    <string name="txt_select_sim_sms">Select SIM to send sms</string>
+    <string name="txt_select_default_sim_sms">Default SIM card will be used to send SMS</string>
+    <string name="txt_within_bank">Within Bank</string>
+    <string name="txt_own_bank">For Own Bank</string>
+    <string name="txt_imps_acc_neft">For IMPS/NEFT to Account</string>
+    <string name="txt_imps_mobile">For IMPS to Mobile</string>
+    <string name="txt_upi_id">For UPI ID</string>
+    <string name="txt_seach_benf">Search list by beneficiary name, IFSC etc</string>
+    <string name="txt_add_ben">Add Beneficiary</string>
+    <string name="hint_note_secuirty_code">(Hint: Security code will be Birth Year &amp; last 6 digits of Customer ID.\ne.g. if Birth year is 1947 and Customer Id is 71123456 then your Security Code will be 1947123456.\n(Note: If Customer ID is 4 digit, add the no. of zero\'s before the Customer ID to make it 6 digit.\ne.g. Birth Year is 1947 and Customer ID is 1234 then Security Code will be 1947001234.))</string>
+    <string name="txt_client_name">Customer Name</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_head_name">Head Name</string>
+    <string name="txt_bank_name">Bank Name</string>
+    <string name="txt_branch_name">Branch Name</string>
+    <string name="txt_bal">Balance</string>
+    <string name="txt_desc">Description</string>
+    <string name="txt_to">To</string>
+    <string name="txt_acc_open_date">Acct Open Date</string>
+    <string name="txt_dob">Date of Birth</string>
+    <string name="txt_client_mob_no">Mobile Number</string>
+    <string name="txt_phone_no">Phone Number</string>
+    <string name="txt_addr">Address</string>
+    <string name="txt_nationality">Nationality</string>
+    <string name="txt_ac_name">A/c Name</string>
+    <string name="txt_ac_no">A/c No.</string>
+    <string name="txt_mob_no">Mob No.</string>
+    <string name="txt_from_account">From A/C</string>
+    <string name="txt_from_upi_id">From UPI Id</string>
+    <string name="txt_linked_account_no">Linked Account</string>
+    <string name="txt_debited_account">Debited A/C</string>
+    <string name="txt_to_account">To A/C</string>
+    <string name="txt_to_beneficery">To Beneficiary</string>
+    <string name="txt_payees_upi_id">Payees UPI ID</string>
+    <string name="txt_email_id">Email Id (Optional)</string>
+    <string name="txt_mob_banking">Mobile Banking</string>
+
+    <!--Checkbox-->
+    <string name="check_agree_terms_conditions">I agree with the Terms &amp; Conditions </string>
+
+    <!--EditText-->
+    <string name="hint_mobile_no">Enter Mobile Number</string>
+    <string name="hint_pin">Enter Pin</string>
+    <string name="hint_forgot_login_pin">Forgot Login Pin?</string>
+    <string name="hint_otp">Enter OTP</string>
+    <string name="hint_mpin">Enter MPIN</string>
+    <string name="hint_tpin">Enter TPIN</string>
+    <string name="hint_account_name">Enter Account Name</string>
+    <string name="hint_account_number">Enter Account Number</string>
+    <string name="hint_confirm_account_number">Confirm Account Number</string>
+    <string name="hint_amount">Amount</string>
+    <string name="hint_remarks">Remarks</string>
+    <string name="hint_mobile_number">Mobile No.</string>
+    <string name="hint_mmid">MMID</string>
+    <string name="hint_ifsc">IFSC</string>
+    <string name="hint_upiid">UPI ID</string>
+    <string name="hint_custname">Customer Name</string>
+    <string name="hint_nickname">Enter Nickname</string>
+    <string name="hint_mob_no">Enter Mobile Number</string>
+    <string name="hint_upi_id">Enter UPI ID</string>
+    <string name="hint_enter_mmid">Enter MMID</string>
+    <string name="hint_confirm_mmid">Confirm MMID</string>
+    <string name="hint_ifsc_code">Enter IFSC Code</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_security_code">Security Code</string>
+    <string name="hint_mpin_id">MPIN</string>
+    <string name="hint_tpin_id">TPIN</string>
+    <string name="hint_confirm_mpin">Confirm MPIN</string>
+    <string name="hint_confirm_tpin">Confirm TPIN</string>
+    <string name="hint_old_tpin">Old TPIN</string>
+    <string name="hint_old_mpin">Old MPIN</string>
+    <string name="hint_new_tpin">New TPIN</string>
+    <string name="hint_new_mpin">New MPIN</string>
+
+    <!--Button-->
+    <string name="btn_login">Login</string>
+    <string name="btn_otp">Get OTP</string>
+    <string name="btn_get_verification_code">Get Verification Code</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_branch_locator">Branch Locator</string>
+    <string name="button_next">Next</string>
+    <string name="text_verify_upi_id">Verify UPI ID</string>
+    <string name="btn_done">Done</string>
+    <string name="btn_activate">Activate</string>
+    <string name="btn_delete_mmid">Delete MMID</string>
+    <string name="btn_send_sms">Send SMS</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_reload">Reload</string>
+    <string name="btn_update_app">Update App</string>
+    <string name="set_server">Set Server</string>
+    <string name="set">Set</string>
+    <string name="btn_verify_ben">Verify beneficiary</string>
+
+    <!--Error Msg-->
+    <string name="device_rooted_message">Your device is rooted!</string>
+    <string name="device_hooked_up_message">App has been hooked by third party app, \nplease uninstall hooking app and retry!</string>
+    <string name="error_mobile_pin">Please enter Mobile Number &amp; Pin</string>
+    <string name="error_mob_no">Please enter Mobile Number</string>
+    <string name="error_pin">Please enter Mobile Pin</string>
+    <string name="error_select_acc_no">Please select account number</string>
+    <string name="error_select_acc_debit_no">Please select debit account number</string>
+    <string name="error_select_to_acc_no">Please select To A/C number</string>
+    <string name="title_select_acc">Select Account</string>
+    <string name="title_select_card">Select Card</string>
+    <string name="title_select_reason">Select Reason</string>
+    <string name="error_validate_match_acct">Confirm account no. mot matched</string>
+    <string name="error_select_to_benf">Please select beneficiary</string>
+    <string name="error_check_internet">Please Check Internet Connection.!</string>
+    <string name="error_no_data_found">No Data Found</string>
+    <string name="error_all_fields_mandatory">All fields are mandatory</string>
+    <string name="error_blank_nickname">Nickname cannot be blank</string>
+    <string name="error_blank_acc_name">Account Name cannot be blank</string>
+    <string name="error_blank_acc_no">Account Number cannot be blank</string>
+    <string name="error_blank_ifsc_code">IFSC code cannot be blank</string>
+    <string name="error_blank_mobile_no">Mobile Number cannot be blank</string>
+    <string name="error_blank_client_id">Customer Id cannot be blank</string>
+    <string name="error_otp">Unable to read Registration Code</string>
+    <string name="error_blank_mmid">MMID cannot be blank</string>
+    <string name="error_blank_fields">Fields cannot be blank</string>
+    <string name="error_blank_otp">OTP is required to perform operation.</string>
+    <string name="error_blank_mpin">Mpin is required to perform fund transfer.</string>
+    <string name="error_blank_tpin">Tpin is required to perform fund transfer.</string>
+    <string name="error_try_again">Something went wrong, please try again.</string>
+    <string name="missmatch_otp">The Registration Code entered is incorrect.</string>
+    <string name="error_security_code">Enter Security Code</string>
+    <string name="error_confirm_mpin">Enter Confirm MPIN</string>
+    <string name="error_confirm_tpin">Enter Confirm TPIN</string>
+    <string name="error_mismatch_mpin">MPIN and Confirm MPIN Doesn\'t Match</string>
+    <string name="error_mpin_lenght">MPIN Should be 4 digit.</string>
+    <string name="error_tpin_lenght">TPIN Should be 4 digit.</string>
+    <string name="error_mismatch_tpin">TPIN and Confirm TPIN Doesn\'t Match</string>
+    <string name="error_session_expire">Session Expired!</string>
+    <string name="error_blank_amt">Please Enter Amount</string>
+    <string name="error_valid_amt">Please Enter Valid Amount</string>
+    <string name="error_valid_amt_limit">Please Enter Valid Limit</string>
+    <string name="error_enter_ifsc_code">Please Enter IFSC Code</string>
+    <string name="error_invalid_ifsc_code">Enter Valid IFSC Code</string>
+    <string name="error_enter_ben_acc_no">Please Enter Beneficiary Account Number</string>
+    <string name="error_invalid_ben_acc_no">Enter Valid Account Number</string>
+    <string name="error_enter_ben_acc_nm">Please Enter Beneficiary Account Name</string>
+    <string name="error_enter_mmid">Please Enter MMID</string>
+    <string name="error_enter_data">Please enter data to create beneficiary</string>
+    <string name="error_benef_remove">Beneficiary Removed Successfully</string>
+    <string name="error_benef_not_added">Beneficiary account not added.</string>
+    <string name="error_within_not_avail">Unable to create beneficiary for within bank fund transfer.</string>
+    <string name="error_invalid_cheque_no">Please enter cheque no.</string>
+    <string name="error_invalid_cheque_date">Please select cheque date</string>
+    <string name="error_enter_remark">Please enter remark</string>
+    <string name="error_enter_payee_name">Please enter payee name</string>
+
+    <string name="error_old_tpin">Enter Old TPIN</string>
+    <string name="error_old_mpin">Enter Old MPIN</string>
+    <string name="title_forget_mpin">Forgot MPIN</string>
+    <string name="title_new_mpin">New MPIN</string>
+
+    <!--Message-->
+    <string name="msg_sure_logout">Are you sure you want to logout?</string>
+    <string name="msg_logout">Logout</string>
+    <string name="msg_double_tap">Double Click to Exit</string>
+    <string name="loading_wait">Loading Please wait&#8230;</string>
+    <string name="loading_wait_auto_read">Please wait.. Registration code is being auto read.</string>
+    <string name="msg_gps_enable">Your GPS seems to be disabled, do you want to enable it?</string>
+    <string name="msg_enter_name">Enter Full Name</string>
+    <string name="msg_enter_email">Enter Email Id</string>
+    <string name="msg_enter_valid_email">Enter Valid Email Id</string>
+    <string name="msg_terms_conditions">Acceptance of terms &amp; conditions is required</string>
+    <string name="msg_excel_download">Excel File Download Successfully. \nDo You Want to open it.</string>
+    <string name="msg_pdf_download">PDF File Download Successfully. \nDo You Want to open it.</string>
+    <string name="msg_excel_not_supported">File does not Support,Please Install Excel Viewer</string>
+    <string name="msg_pdf_not_supported">File does not Support,Please Install PDF Viewer</string>
+    <string name="msg_gps_setting">GPS Setting</string>
+    <string name="msg_resend_otp_enable">Resend OTP will enable in </string>
+    <string name="msg_transaction_success">Transaction Successful</string>
+    <string name="msg_refresh_token">Would you like to Refresh Existing Session?</string>
+    <string name="msg_update_app">New updates available.</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="message_sure_wnt_to_logount">Are you sure want to logout?</string>
+
+    <string name="copyright">Powered by Daus Infospace Pvt. Limited \n
+            Mobile Banking(IMPS) - Copyright © 2019 by Trust Systems &amp; Software (I) Pvt. Ltd</string>
+    <string name="please_enter_otp">Please Enter Registration Code</string>
+    <string name="submit">Submit</string>
+    <string name="search_by">Search By:</string>
+
+    <string name="alert_excel_message">Excel File Downloaded Successfully. \nDo You Want to open it.</string>
+    <string name="alert_pdf_message">PDF File Downloaded Successfully. \nDo You Want to open it.</string>
+    <string name="alert_pdf_message_short">Note: Your E-Account statement is protected by a password which is the Customer ID.</string>
+
+    //=========settings=============//
+    <string name="txt_change_mpin">Change MPIN</string>
+    <string name="txt_change_tpin">Change TPIN</string>
+    <string name="txt_reset_tpin">Reset TPIN</string>
+    <string name="txt_transaction_limit">Transaction Limit</string>
+    <string name="txt_register_another_client">Register Customer Id</string>
+    <string name="txt_debit_card_pin_generate">Debit Card Pin Generate</string>
+
+    <string name="title_imps_transactions_status">Check Transaction Status</string>
+    <string name="hint_client_id">Enter Customer Id</string>
+
+    <string name="txt_edit">Edit</string>
+    <string name="hint_transaction_limit">Transaction Limit</string>
+
+
+    <string name="msg_back_button">Back button is not enabled. Please use on-screen navigation.</string>
+    <string name="input_type_alphanumeric">ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890</string>
+
+
+    <string name="alert_back_message">Do you want to cancel registration ?</string>
+    <string name="alert_back_title">Cancel Registration</string>
+
+
+    <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+    <!--TextView-->
+    <string name="tv_from_date">From Date</string>
+    <string name="tv_To_date">To Date</string>
+    <string name="tv_biller_category">Biller Category</string>
+    <string name="tv_coverage">Coverage</string>
+    <string name="tv_biller_name">Biller Name</string>
+    <string name="tv_biller_id">Biller ID</string>
+    <string name="tv_consumer_no">Consumer Number</string>
+    <string name="tv_customer_mob_no">Consumer Mobile Number</string>
+    <string name="tv_consumer_name">Consumer Name</string>
+    <string name="tv_bill_date">Bill Date</string>
+    <string name="tv_payee_mob_no">Payee Mobile Number</string>
+    <string name="tv_mob_no">Mobile Number</string>
+    <string name="tv_bill_to_be_paid">Select Bill To Be Paid</string>
+    <string name="tv_payment_mode_select">Select Payment Mode</string>
+    <string name="tv_payment_mode">Payment Mode</string>
+    <string name="tv_amount">Amount</string>
+    <string name="tv_category">Category</string>
+    <string name="tv_cust_convienience_fees">Customer Convinence Fees</string>
+    <string name="tv_total_amount_enter">Enter Total Amount</string>
+    <string name="tv_type_of_complaint">Type of Complaint</string>
+    <string name="tv_complaint_type">Complaint Type</string>
+    <string name="tv_complaint_reason">Complaint Reason</string>
+    <string name="tv_total_amount">Total Amount</string>
+    <string name="tv_transaction_success">Transaction Successful !!</string>
+    <string name="tv_transaction_amt">Transaction Amount</string>
+    <string name="tv_charges">Charges</string>
+    <string name="tv_status">Status</string>
+    <string name="tv_transaction_id">Transaction ID</string>
+    <string name="tv_customer_id">Customer ID</string>
+    <string name="tv_BBPOU_name">BBPOU Name</string>
+    <string name="tv_transaction_status">Transaction Status</string>
+    <string name="tv_transaction_datetime">Transaction Date And Time </string>
+    <string name="tv_payment_channel">Payment Channel</string>
+    <string name="tv_complaint_desc">Complaint Description</string>
+    <string name="tv_customer_name">Customer Name</string>
+    <string name="tv_from_account">From Account</string>
+    <string name="tv_to_upi_beneficiary">To UPI Beneficiary</string>
+
+
+    <!--EditText-->
+    <string name="et_transaction_id_enter">Enter Transaction ID</string>
+    <string name="et_biller_name_enter">Enter Biller Name</string>
+    <string name="et_biller_id_enter">Enter Biller ID</string>
+    <string name="et_consumer_no_enter">Enter Consumer Number</string>
+    <string name="et_consumer_name_enter">Enter Consumer Name</string>
+    <string name="et_cust_convienience_fees_enter">Enter Customer Convinence Fees</string>
+    <string name="et_enter_remark">Enter Remarks</string>
+    <string name="et_mob_no_enter">Enter Mobile Number</string>
+    <string name="et_payee_mob_no_enter">Enter Payee Mobile Number</string>
+    <string name="et_amount_enter">Enter Amount</string>
+    <string name="et_bill_period">Enter Bill Period</string>
+    <string name="et_bill_number">Enter Bill Number</string>
+    <string name="et_bill_due_date">Enter Bill Due Date</string>
+    <string name="et_bill_date_enter">Enter Bill Date</string>
+    <string name="et_complaint_id">Enter Complaint ID</string>
+    <string name="et_complaint_desc">Enter Complaint Description</string>
+    <string name="et_enter_nickname">Enter Nick Name</string>
+    <string name="et_enter_upi_id">Enter UPI ID</string>
+
+
+    <!--Select Spinner Default message-->
+    <string name="sp_select_biller_category">--Select Biller Category--</string>
+    <string name="sp_select_coverage">--Select Coverage--</string>
+    <string name="sp_select_bill_tobe_paid">--Select Bill to be Paid--</string>
+    <string name="sp_select_payment_mode">--Select Payment Mode--</string>
+    <string name="sp_select_typeof_complaint">--Select Type of Complaint--</string>
+
+
+    <!--Error Msg-->
+    <string name="error_biller_name">Please Enter Biller Name </string>
+    <string name="error_consumer_number">Please Enter Consumer Number </string>
+    <string name="error_consumer_name">Please Enter Consumer Name</string>
+    <string name="error_amount">Please Enter Amount</string>
+    <string name="error_bill_date">Please Enter Bill Date</string>
+    <string name="error_bill_period">Please Enter Bill Period</string>
+    <string name="error_bill_number">Please Enter Bill Number</string>
+    <string name="error_payee_mobile_no">Please Enter Payee Mobile Number</string>
+    <string name="error_mobile_no">Please Enter mobile number</string>
+    <string name="error_valid_mobile_no">Please Enter Valid Mobile number</string>
+    <string name="error_valid_payee_mobile_no">Please Enter valid payee Mobile number</string>
+    <string name="error_payment_mode">Please Select Payment Mode </string>
+    <string name="error_type_of_complaint">Please Select Type of Complaint</string>
+    <string name="error_complaint_type">Please Select Complaint Type</string>
+    <string name="error_complaint_reason">Please Select complaint Reason</string>
+    <string name="error_complaint_descripton">Please Enter complaint Description</string>
+    <string name="error_cust_convienience_fees_enter">Please Enter Customer Convenience Fees</string>
+    <string name="error_total_amount_enter">Please Enter Total Amount</string>
+    <string name="error_biller_cate">Please Select Biller Category </string>
+    <string name="error_coverage">Please Select Coverage </string>
+    <string name="error_coverage2">Please Select Coverage2 </string>
+    <string name="error_biller_id">Please Enter Biller ID </string>
+    <string name="error_complaint_id">Please Enter Compliant ID </string>
+    <string name="error_transaction_id">Please Enter Transaction ID</string>
+    <string name="error_bill_tobe_paid">Please Select Bill To Be Paid </string>
+    <string name="error_enter_nickname">Please Enter Nick Name</string>
+    <string name="error_enter_upi_id">Please Enter UPI ID</string>
+    <string name="error_select_account">Please Select Account</string>
+    <string name="error_select_upi_beneficiary">Please Select UPI Beneficiary</string>
+
+
+    <!--BUTTON-->
+    <string name="btn_view_details">VIEW DETAILS</string>
+    <string name="btn_search">SEARCH</string>
+    <string name="btn_pay">PAY</string>
+    <string name="btn_view">VIEW</string>
+    <string name="btn_back">BACK</string>
+    <string name="btn_proceed">PROCEED</string>
+    <string name="btn_email">E-MAIL</string>
+    <string name="btn_reg_complaint">REGISTER COMPLAINT</string>
+    <string name="btn_print">PRINT</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_enter_cheque_no">Enter Cheque No.</string>
+
+    <string name="btn_verify">VERIFY</string>
+
+
+    <!--Activity names-->
+    <string name="search_biller">Search Biller</string>
+    <string name="pay_bill">Pay Bill</string>
+    <string name="fetch_bill">Fetch Bill</string>
+    <string name="non_pay_bill">Non-Pay Bill</string>
+    <string name="confirm_payment_detail">Confirm Payment Details</string>
+    <string name="transaction_receipt">Transaction Receipt</string>
+    <string name="search_transaction">Search Transaction</string>
+    <string name="transaction_list">Transaction List</string>
+    <string name="complaint_register">Transaction Complaint Registration</string>
+    <string name="transaction_comp_detail">Transaction Complaint Details</string>
+    <string name="service_comp_register">Service Complaint Registration</string>
+    <string name="Complaint_tracking">Complaint Tracking</string>
+    <string name="add_upi">Add UPI Beneficiary</string>
+    <string name="upi_transaction">UPI Transaction</string>
+
+
+    <!-- Strings related to MainActivity-->
+    <string name="scan_barcode_button">Scan QR</string>
+    <string name="no_barcode_captured">No QR captured</string>
+    <string name="barcode_error_format">"Error reading QR: %1$s"</string>
+
+    <!-- Strings related to barcode scanner -->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+
+    <string name="error_reference_id">Please Enter Reference No.</string>
+    <string name="error_description_id">Please Enter Remark</string>
+    <string name="error_complaint_type_id">Please Select Complaint Type</string>
+
+    <string name="msg_sure_collect_req">Are you sure you want to request money of rs  </string>
+    <string name="msg_create_barcode_req">Are you sure you want to generate QR.  </string>
+    <string name="msg_confirm_collect_req">Confirm</string>
+
+
+    <string name="txt_withdrawl_amount">Withdrawl Amount</string>
+    <string name="txt_expiry_date">Expiry Date</string>
+    <string name="txt_installment_amount">Installment Amount</string>
+    <string name="txt_deposit_period">Deposit Period</string>
+    <string name="txt_maturity_amount">Maturity Amount</string>
+    <string name="txt_maturity_date">Maturity Date</string>
+    <string name="txt_scheme_name">Scheame Name</string>
+    <string name="txt_interest_rate">Interest Rate</string>
+    <string name="txt_account_status">A/C Status</string>
+</resources>

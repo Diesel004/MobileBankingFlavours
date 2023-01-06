@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/verify_mobile_img" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Welcome to \n Mobile Banking App"
+            android:textColor="?attr/textColorPrimaryDark"
+            android:textSize="@dimen/text_24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_welcome_title1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_welcome_title2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16sp"
+            android:typeface="serif" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_welcome_title3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_welcome_title4"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16sp"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btnActivate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="?attr/textColorPrimary"
+            android:text="@string/btn_activate"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_14sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewVersionName"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_above="@+id/txtVersionNameId"
+        android:background="?attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/txtVersionNameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="3dp"
+        android:padding="2dp"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="@dimen/text_12sp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/setServerButton"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right|left"
+        android:layout_margin="10dp"
+        android:paddingTop="0dp"
+        android:background="?attr/textColorPrimary"
+        android:paddingBottom="0dp"
+        android:text="@string/set_server"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayoutId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/txtTermsAndConditionId"
+                android:layout_marginBottom="5dp">
+
+                <WebView
+                    android:id="@+id/txtAboutUsId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="3dp"
+                    android:justificationMode="inter_word"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif" />
+
+
+            </androidx.core.widget.NestedScrollView>
+
+            <TextView
+                android:id="@+id/txtTermsAndConditionId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/viewVersionName"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="8dp"
+                android:text="Terms &amp; Conditions"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="?attr/textColorAccent"
+                android:textSize="@dimen/text_18sp"
+                android:typeface="serif" />
+
+            <View
+                android:id="@+id/viewVersionName"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:visibility="gone"
+                android:layout_above="@+id/txtVersionNameId"
+                android:background="?attr/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/txtVersionNameId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:padding="2dp"
+                android:textColor="?attr/textColorAccent"
+                android:textSize="@dimen/text_12sp"
+                android:typeface="serif" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

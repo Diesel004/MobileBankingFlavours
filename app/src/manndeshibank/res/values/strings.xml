@@ -1,0 +1,9 @@
+<resources>
+    <!--<string name="set_server_IP">https://59.97.236.37:4530</string> =====TRUST DEMO VAPT IP====-->
+    <!--<string name="set_server_IP">https://59.95.101.93:4530</string> =====TRUST DEMO VAPT IP====-->
+    <!--<string name="set_server_IP">https://192.168.0.6:8024</string>  =====TRUST DEMO VAPT IP====&ndash;&gt;-->
+  <string name="set_server_IP">https://manndeshibank.in:33027</string>   //====Manndeshi UAT(becomes LIVE21OCT2021)==========//
+    <!--<string name="set_server_IP">https://manndeshibank.in:33030</string>   //====Manndeshi UAT==========//-->
+
+</resources>
+

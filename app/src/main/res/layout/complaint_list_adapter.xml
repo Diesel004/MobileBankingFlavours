@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/accDetCoordinatorLayoutId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="3dp"
+        android:clickable="true"
+        android:layout_margin="10dp"
+        android:checkable="true"
+        card_view:cardElevation="8dp"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".90"
+                    android:text="Txn Reference Id"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/txn_refid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".90"
+                    android:textColor="@color/black"
+                    android:text="Amount"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:textSize="@dimen/text_14sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:typeface="serif" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".90"
+                    android:textColor="@color/black"
+                    android:text="Txn Date"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/tv_txn_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:textSize="@dimen/text_14sp"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".90"
+                    android:text="Agent ID"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/tv_agent_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".90"
+                    android:text="@string/tv_biller_id"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/biller_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="@dimen/text_14sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".90"
+                    android:textColor="@color/black"
+                    android:text="Txn Status"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/transaction_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="@dimen/text_14sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

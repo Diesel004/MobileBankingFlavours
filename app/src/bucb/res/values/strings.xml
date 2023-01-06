@@ -1,0 +1,6 @@
+<resources>
+<!--<string name="set_server_IP">https://59.97.236.37:4530</string> =====TRUST DEMO VAPT IP====-->
+<!--        <string name="set_server_IP">https://59.95.101.93:4530</string> =====TRUST DEMO VAPT IP====-->
+        <string name="set_server_IP">https://117.217.124.210:2929</string> =====Brahmpuri urban co-operative(bucb) DEMO VAPT IP====
+
+</resources>

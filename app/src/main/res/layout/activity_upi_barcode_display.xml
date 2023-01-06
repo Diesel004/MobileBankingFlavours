@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayoutId"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.UpiQRDisplayActivity">
+
+    <LinearLayout
+        android:id="@+id/errorLL"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtErrorId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/text_18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/successLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fromAccNameId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/text_20sp"
+            android:textColor="@color/light_black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="XXXXXXX"/>
+
+        <TextView
+            android:id="@+id/fromAccNoId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/text_16sp"
+            android:textColor="@color/light_black"
+            android:gravity="center"
+            android:text="XXXXXXXXXXXXXXXX"/>
+
+        <TextView
+            android:id="@+id/amtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/text_16sp"
+            android:visibility="gone"
+            android:textColor="@color/light_black"
+            android:gravity="center"
+            android:text="Rs. 30"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/text_20sp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="Scan this code to pay me"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:textSize="@dimen/text_20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="UPI ID"/>
+
+        <TextView
+            android:id="@+id/upiID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/text_20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text=""/>
+        <!--     <Button
+                 android:id="@+id/saveBarcodeId"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="?attr/textColorPrimary"
+                 android:textAllCaps="true"
+                 android:textColor="@color/colorWhite"
+                 android:textSize="@dimen/text_14sp"
+                 android:textStyle="bold"
+                 android:typeface="serif"
+                 android:text="Save"/>-->
+
+        <ImageView
+            android:id="@+id/iv_qr_code"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_margin="30dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

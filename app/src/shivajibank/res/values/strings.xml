@@ -1,0 +1,8 @@
+<resources>
+
+<!--<string name="set_server_IP">https://59.95.101.93:4530</string> =====TRUST DEMO VAPT IP====-->
+<!--<string name="set_server_IP">https://59.95.101.93:8024</string>   &lt;!&ndash;//====Trust VAPT side==========//&ndash;&gt;-->>
+    <!--<string name="set_server_IP">https://59.90.140.85:2125</string>  &lt;!&ndash; Shivaji Bank Live Play store=====>&ndash;&gt;-->
+    <string name="set_server_IP">https://mbank.shivajibank.com:2125</string>  <!-- (Shivaji Bank Live Play store update on domain 08092022)=====>-->
+
+</resources>

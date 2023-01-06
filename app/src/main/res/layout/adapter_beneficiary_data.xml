@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="3dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtNicknameId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/textColour"
+                    android:drawableEnd="@drawable/ic_delete_red_24dp"
+                    android:drawableRight="@drawable/ic_delete_red_24dp"
+                    android:padding="10dp"
+                    android:textSize="@dimen/text_18sp"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textColor="@color/colorWhite"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtBenfId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="@dimen/text_16sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/accNameLayoutId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:text="@string/txt_ac_name"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.67"
+                                android:gravity="center"
+                                android:text="@string/txt_colon"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+
+                            <TextView
+                                android:id="@+id/txtAccNameId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="0.2"
+                                android:textColor="?attr/textColour"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/text_16sp"
+                                android:typeface="serif" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/accNoLayoutId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:text="@string/txt_ac_no"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.67"
+                                android:gravity="center"
+                                android:text="@string/txt_colon"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+
+                            <TextView
+                                android:id="@+id/txtAccNumberId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="0.2"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_16sp"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/ifscLayoutId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:text="@string/hint_ifsc"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.67"
+                                android:gravity="center"
+                                android:text="@string/txt_colon"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+
+
+                            <TextView
+                                android:id="@+id/txtIfscId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="0.2"
+                                android:textSize="@dimen/text_16sp"
+                                android:textColor="?attr/textColour"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/mobNoLayoutId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:text="@string/txt_mob_no"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.67"
+                                android:gravity="center"
+                                android:text="@string/txt_colon"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+
+                            <TextView
+                                android:id="@+id/txtMobNoId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="0.2"
+                                android:textSize="@dimen/text_16sp"
+                                android:textColor="?attr/textColour"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/mmidLayoutId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:text="@string/hint_mmid"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.67"
+                                android:gravity="center"
+                                android:text="@string/txt_colon"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+
+                            <TextView
+                                android:id="@+id/txtMmidId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.2"
+                                android:textSize="@dimen/text_16sp"
+                                android:textColor="?attr/textColour"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/upiLayoutId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:text="@string/hint_upiid"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.67"
+                                android:gravity="center"
+                                android:text="@string/txt_colon"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+
+                            <TextView
+                                android:id="@+id/txtUpiId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.2"
+                                android:textSize="@dimen/text_16sp"
+                                android:textColor="?attr/textColour"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/upicustomerLayoutId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:text="@string/hint_custname"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.67"
+                                android:gravity="center"
+                                android:text="@string/txt_colon"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+
+                            <TextView
+                                android:id="@+id/txtUpicustomerNameId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.2"
+                                android:textSize="@dimen/text_16sp"
+                                android:textColor="?attr/textColour"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <Button
+                            android:id="@+id/btnIMPSId"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="?attr/textColorPrimary"
+                            android:text="IMPS"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:visibility="gone"/>
+
+                        <Button
+                            android:id="@+id/btnNEFTId"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:background="?attr/textColorPrimary"
+                            android:text="NEFT"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:visibility="gone"/>
+
+                        <Button
+                            android:id="@+id/btnWithInId"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:background="?attr/textColorPrimary"
+                            android:text="WITHIN"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:visibility="gone"/>
+
+                        <Button
+                            android:id="@+id/btnUpiId"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:background="?attr/textColorPrimary"
+                            android:text="UPI ID"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

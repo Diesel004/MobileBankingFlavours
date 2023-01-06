@@ -1,0 +1,8 @@
+<resources>
+
+    <!--<string name="set_server_IP">https://59.95.101.93:4530</string> =====TRUST DEMO VAPT IP====-->
+    <!--<string name="set_server_IP">https://59.181.101.183:8385</string> --> <!-- ==MDCC Live=======-->
+    <string name="set_server_IP">https://mbank.mdccbank.com:8385</string>  <!-- ==MDCC Live=======-->
+   <!-- <string name="set_server_IP">https://59.95.101.93:8079</string> == Trust Demo ==-->
+
+</resources>

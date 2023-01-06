@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fitsSystemWindows="true">
+
+    <!--
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/textColorPrimaryDark"
+                app:expandedTitleGravity="center_horizontal|bottom"
+                app:expandedTitleMarginTop="80dp"
+                app:expandedTitleTextAppearance="@style/HeaderTitleStyle"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+    -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="90dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relativeViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/card_background_selector"
+                    android:padding="5dp">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        app:layout_collapseMode="pin"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/indicator"
+                        android:layout_below="@+id/toolbar"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true" />
+
+                    <com.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="bottom"
+                        app:centered="true"
+                        app:fillColor="?attr/textColorPrimaryDark"
+                        app:pageColor="#FFFFFF"
+                        app:snap="false" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeUserInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    android:background="?attr/textColorPrimary"
+                    android:padding="2dp">
+
+                    <!--<de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageViewProfile_Id"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:src="@drawable/ic_profile"
+                        app:civ_border_color="@color/colorWhite"
+                        app:civ_border_width="4dp" />-->
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="100dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imageViewProfile_Id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_profile"
+                            app:civ_border_color="@color/colorWhite"
+                            app:civ_border_width="4dp" />
+
+                        <!--   <ImageView
+                               android:id="@+id/imageViewProfile_Id"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:scaleType="centerCrop"
+                               android:src="@drawable/ic_profile" />-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toEndOf="@+id/linearLayout"
+                        android:layout_toRightOf="@+id/linearLayout"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/welcome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textViewUserName_Id"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:text="Welcome"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_18sp"
+                            android:typeface="serif" />
+
+
+                        <TextView
+                            android:id="@+id/textViewUserName_Id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/welcome"
+                            android:layout_alignRight="@+id/welcome"
+                            android:layout_alignParentTop="true"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_16sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerListId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="90dp"
+                    android:background="#10000000"
+                    android:clipToPadding="false"
+                    android:padding="@dimen/item_offset"
+                    android:scrollbars="none"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewHoriListId"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_alignParentBottom="true"
+                android:background="#10000000"
+                android:orientation="horizontal"
+                android:clipToPadding="false"
+                android:padding="@dimen/item_offset"
+                android:scrollbars="none" />
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabLogOutButton_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/colorWhite"
+        android:backgroundTint="@color/colorWhite"
+        android:src="@drawable/ic_power_off"
+        app:layout_anchorGravity="bottom|end" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

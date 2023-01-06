@@ -1,0 +1,19 @@
+<resources>
+    <!--<string name="set_server_IP">https://59.97.236.37:4530</string> =====TRUST DEMO VAPT IP====-->
+    <!--<string name="set_server_IP">https://59.95.101.93:4530</string> =====TRUST DEMO VAPT IP====-->
+    <!--<string name="set_server_IP">https://192.168.0.6:8024</string>  =====TRUST DEMO VAPT IP====&ndash;&gt;-->
+    <!--<string name="set_server_IP">https://117.223.136.33:4530</string>   //====pdcc UAT side==========//&ndash;&gt;-->
+    <!--<string name="set_server_IP">https://59.95.101.93:8024</string>   &lt;!&ndash;//====Trust() VAPT side==========//&ndash;&gt;-->
+  <!--  <string name="set_server_IP">https://117.232.123.116:4981</string>   &lt;!&ndash;//====pdcc Live side==========;&ndash;&gt;-->
+
+
+    <!--<string name="set_server_IP">https://mbank.pdccbank.com:4981</string> -->  <!--//====pdcc Live side==========;-->
+
+    <!--<string name="set_server_IP">https://59.95.101.93:8079</string>-->
+ <!--   <string name="set_server_IP">https://10.1.43.13:4981</string>   //====pdcc Live2 side==========;-->
+
+    <!--<string name="set_server_IP">https://192.168.0.6:8049</string>  =====TRUST Test Unviorment DEMO VAPT IP====&ndash;&gt;-->
+    <string name="set_server_IP">https://117.236.117.44:4988</string><!-- &lt;!&ndash;//PDCC UAT 16-09-2022&ndash;&gt;-->
+
+    <!--<string name="set_server_IP">https://59.95.101.93:8079</string> -->
+</resources>

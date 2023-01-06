@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="pageMargin" format="reference|dimension" />
+    <attr name="contentLeftMargin" format="reference|dimension" />
+    <attr name="lockGradient" format="color" />
+    <attr name="textColorAccent" format="color" />
+    <attr name="textColorPrimary" format="color" />
+    <attr name="textColorPrimaryDark" format="color" />
+    <attr name="dropArrow" format="reference" />
+    <attr name="colorGreen" format="color" />
+    <attr name="colorGreenFent" format="color" />
+    <attr name="splashScreen" format="reference"/>
+    <attr name="searchIcon" format="reference"/>
+    <attr name="textColour" format="color"/>
+    <attr name="gradientColourDark" format="color"/>
+    <attr name="gradientColour" format="color"/>
+<!--    <attr name="buttonBackground" format="reference"/>-->
+</resources>

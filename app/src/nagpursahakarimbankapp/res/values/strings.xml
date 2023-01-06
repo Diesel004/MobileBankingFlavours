@@ -1,0 +1,7 @@
+<resources>
+
+
+    <!--<string name="set_server_IP">https://122.252.239.150:3005</string>  &lt;!&ndash; VMUCB Bank Live=====>&ndash;&gt;-->
+    <string name="set_server_IP">https://mbank.pdccbank.com:4981</string>  <!--- Nagapur sahaakri demo live Bank =====>-->
+
+</resources>

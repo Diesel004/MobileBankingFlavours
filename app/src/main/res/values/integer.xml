@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="balance_lenght">14</integer>
+    <integer name="account_number">20</integer>
+    <integer name="cheque_number_lenght">6</integer>
+    <integer name="security_code_lenght">10</integer>
+    <integer name="remark_lenght">50</integer>
+    <integer name="client_id_lenght">12</integer>
+</resources>

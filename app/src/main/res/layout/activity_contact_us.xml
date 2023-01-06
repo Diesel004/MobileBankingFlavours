@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="3dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@drawable/ic_location_on_black_24dp"
+                        android:text="@string/txt_head_office_address"
+                        android:textColor="?attr/textColorPrimary"
+                        android:textSize="@dimen/text_16sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/txtHeadOfficeAddrId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/text_16sp"
+                        android:textColor="?attr/colorGreenFent"
+                        android:typeface="serif" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:drawableLeft="@drawable/ic_email_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@drawable/ic_email_black_24dp"
+                        android:text="@string/txt_email_addr"
+                        android:textColor="?attr/textColorPrimary"
+                        android:textSize="@dimen/text_16sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/txtEmailAddrId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/text_16sp"
+                        android:textColor="?attr/colorGreenFent"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:drawableLeft="@drawable/ic_call_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@drawable/ic_call_black_24dp"
+                        android:text="@string/txt_contact_num"
+                        android:textColor="?attr/textColorPrimary"
+                        android:textSize="@dimen/text_16sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                     <TextView
+                        android:id="@+id/txtContactNoId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/text_16sp"
+                         android:textColor="?attr/colorGreenFent"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:drawableLeft="@drawable/ic_language_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@drawable/ic_language_black_24dp"
+                        android:text="@string/txt_website"
+                        android:textColor="?attr/textColorPrimary"
+                        android:textSize="@dimen/text_16sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/txtWebsiteId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/text_16sp"
+                        android:textColor="?attr/colorGreenFent"
+                        android:typeface="serif" />
+
+
+                    <Button
+                        android:id="@+id/btnBranchLocatorId"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:background="?attr/textColorPrimary"
+                        android:drawableLeft="@drawable/ic_search_white_24dp"
+                        android:drawableStart="@drawable/ic_search_white_24dp"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:text="@string/btn_branch_locator"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_14sp"
+                        android:textStyle="bold"
+                        android:typeface="serif"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.core.widget.NestedScrollView>

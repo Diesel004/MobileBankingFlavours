@@ -1,0 +1,7 @@
+<resources>
+
+  <!--  <string name="set_server_IP">https://59.95.101.93:8089</string>   =====Trust DEMO IP====-->
+  <!--  <string name="set_server_IP">https://mbank.sadhanabankngp.com:9865</string>-->   <!--=====New Sadhana Live===-->
+    <string name="set_server_IP">https://mbank.sadhanabankngp.com:1007</string>   <!--=====New Sadhana UAT===-->
+
+</resources>

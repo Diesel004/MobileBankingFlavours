@@ -1,0 +1,6 @@
+<resources>
+    <!--<string name="set_server_IP">https://59.95.101.93:4530</string> =====TRUST DEMO VAPT IP====-->
+    <!--<string name="set_server_IP">https://192.168.0.6:8024</string>  =====TRUST DEMO VAPT IP====&ndash;&gt;-->
+<!--   <string name="set_server_IP">https://49.50.125.148:7767</string>   &lt;!&ndash;//====SMRITI UAT side==========//&ndash;&gt;-->
+    <string name="set_server_IP">https://49.50.125.139:6877</string>   <!--//====SMRITI Live side==========//-->
+</resources>

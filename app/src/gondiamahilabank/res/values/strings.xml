@@ -1,0 +1,6 @@
+<resources>
+
+<!--<string name="set_server_IP">https://59.95.101.93:4530</string> =====TRUST DEMO VAPT IP====-->
+<string name="set_server_IP">https://112.133.240.22:5789</string>  <!-- ====Gondia Mahila Bank UAT(BECOMES lIVE)=======-->
+
+</resources>

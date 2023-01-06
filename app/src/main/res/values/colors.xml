@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#0070BE</color>
+    <color name="colorPrimaryDark">#0070BE</color>
+    <color name="colorAccent">#0070BE</color>-->
+
+    <color name="colorPrimary">#e74c3c</color>
+    <color name="colorPrimaryDark">#c0392b</color>
+    <color name="colorAccent">#f96353</color>
+
+    <color name="colorGradientDark">#70f96353</color>
+    <color name="colorGradient">#20f96353</color>
+
+    <color name="colorPrimaryBlue">#0070BE</color>
+    <color name="colorPrimaryDarkBlue">#0070BE</color>
+    <color name="colorAccentBlue">#0070BE</color>
+
+    <color name="colorGradientDarkBlue">#700070BE</color>
+    <color name="colorGradientBlue">#200070BE</color>
+
+    <color name="greenColor">#0c9c87</color>
+    <color name="colorAccentNew">#f17e72</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="light_black">#3e3e3e</color>
+    <color name="backgroundColor">#f2f0f0</color>
+    <color name="colorGreen">#2E7D32</color>
+    <color name="pinkColor">#FA8072</color>
+    <color name="silverColor">#C0C0C0</color>
+    <color name="lightWhiteColor">#F4F4F4</color>
+
+
+    <!--Used for pin activation gradient-->
+    <color name="greenColorfent">#55bfae</color>
+    <color name="green_dark">#089480</color>
+    <!--end-->
+
+
+    <color name="blueColorfent">#4E98CC</color>
+    <color name="blue_dark_fent">#0872BC</color>
+    <color name="blue_dark">#0969AC</color>
+    <color name="backColorfent">#A3CFED</color>
+
+    <color name="colorLightGray">#20111111</color>
+    <color name="transparant">#00111111</color>
+
+    <color name="buying_tips">#e14342</color>
+    <color name="live_score">#2b82c9</color>
+    <color name="tips_schedule">#945ddd</color>
+    <color name="result">#30a683</color>
+    <color name="video">#d37947</color>
+    <color name="rate_us">#a6a934</color>
+    <color name="faq">#11A1E3</color>
+    <color name="chnage_tpin">#29D3C3</color>
+   <!-- <color name="contact_us">#36404A</color>
+    <color name="about_us">#00D7DF</color>
+    <color name="feedback">#546188</color>
+    <color name="help_for_loosers">#FF6D00</color>-->
+
+</resources>

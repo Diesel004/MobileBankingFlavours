@@ -1,0 +1,4 @@
+<resources>
+    <!--<string name="set_server_IP">https://103.163.188.153:4005</string>  &lt;!&ndash;- UAT =====>&ndash;&gt;-->
+    <string name="set_server_IP">https://103.163.188.153:4011</string>  <!--- live =====>-->
+</resources>

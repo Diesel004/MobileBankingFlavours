@@ -1,0 +1,388 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 31
+    defaultConfig {
+        applicationId "com.trustbank"
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionCode 3
+        versionName "1.0.1"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
+        buildConfigField "String", "enc_key" ,'"AP87TsvPTi2Aul1ipZrT3J4fNm4/LbhNLoX0i2WogFQ="'
+        buildConfigField "String", "api_key" ,'"7jth/XWjfImtF4xY9TLYQbTZJAfC8ZiiZa5jfzOf3rM="'
+    }
+
+    buildTypes {
+
+        /*release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }*/
+
+        //remove this progard
+        release {
+            debuggable false //true
+            minifyEnabled true
+            //useProguard true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.release
+        }
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            //useProguard false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.debug
+        }
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    flavorDimensions "content"
+    productFlavors {
+
+        trustmbank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".trustmbank"
+            versionName "1.0.6"
+            versionCode 19
+            resValue "string", "app_name", "Trust Mbank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/ic_launcher",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        sadhnambank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".sadhnambank"
+            versionName "1.0.5"
+            versionCode 6
+            resValue "string", "app_name", "SSB Mbank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/sadhna_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        pucbmbank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".pucbmbank"
+//            versionName "1.0.2" //close  test VERSION
+//            versionCode 3      //close  test VERSION
+        //    versionName "1.1.3" //Live VERSION
+          //  versionCode 17       //Live Version.
+            versionName "1.1.4" //Live VERSION 5/11/2022
+            versionCode 18       //Live Version.5/11/2022
+            resValue "string", "app_name", "PUCB Mbank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/puc_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        pdccbank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".pdccbank"
+          //  versionName "1.0.8" 1st version of pdcc
+           // versionCode 1
+            versionName "1.1.3"
+            versionCode 6
+            resValue "string", "app_name", "PDCC Mbank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/pdcc_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        bucb {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".bucbank"
+            versionName "1.0.0"
+            versionCode 1
+            resValue "string", "app_name", "BUCB Mbank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/ic_brahmpuri_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        shivajibank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".shivajibank"
+            versionName "1.0.3"
+            versionCode 4
+            resValue "string", "app_name", "SHIVAJI BANK MB"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/shivaji_bank_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        vmucbbank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".vmucbbank"
+            versionName "1.0.4"  //(1.0.2)update with domain 25/04/2022  //1.0.4 --25/05/2022(sessionmanager key issue)
+            versionCode 5
+            resValue "string", "app_name", "m - Pay VMUCB"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/logo_vmucb_mpay",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        punepeoplesbank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".punepeoplesbank"
+            versionName "1.0.0"
+            versionCode 1
+            resValue "string", "app_name", "PPC MBank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/ppc_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        trustdemombankapp {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".trustdemombankapp"
+            versionName "1.0.6"
+            versionCode 7
+            resValue "string", "app_name", "MBank Dev"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/ic_launcher",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        gondiamahilabank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".gondiamahilabank"
+            versionName "1.0.0"
+            versionCode 1
+            resValue "string", "app_name", "Mahila Urban Co-Opp Bank Gondia MBank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/gondia_mahila_bank",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        smritibank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".smritibank"
+//            versionName "1.0.6"
+//            versionCode 7
+            versionName "1.0.7"
+            versionCode 8
+            resValue "string", "app_name", "Smriti MBank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/smriti_bank",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        manndeshibank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".manndeshibank"
+            versionName "1.0.1"
+            versionCode 2
+            resValue "string", "app_name", "Mann Deshi M-Connect Banking"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/mandeshi_bank_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        hedgewarmbank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".hedgewarmbank"
+            versionName "1.0.2"
+            versionCode 3
+            resValue "string", "app_name", "Dr.Hedgewar MBank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/hedgewar_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        janataajarambank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".janataajarambank"
+            versionName "1.0.2"
+            versionCode 4
+            resValue "string", "app_name", "Janata Bank Ajara"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/janata_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        parijatmbank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".parijatmbank"
+            versionName "1.0.0"
+            versionCode 1
+            resValue "string", "app_name", "Parijat MBank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/parijat_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        mdccmbank { //UnUsed.
+            applicationId "com.trustbank"
+            applicationIdSuffix ".mdccmbank"
+            versionName "1.0.0"
+            versionCode 1
+            resValue "string", "app_name", "MDCC MBank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/mdcc_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        kucbmbank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".kucbmbank"
+            versionName "1.0.1"
+            versionCode 2
+            resValue "string", "app_name", "Kashipur MBank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/kucb_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        anuradhambankbank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".anuradhambankbank"
+            versionName "1.0.1"
+            versionCode 2
+            resValue "string", "app_name", "Anuradha Bank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/anuradha_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+
+        vnspmmbank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".vnspmmbank"
+            versionName "1.0.0"
+            versionCode 1
+            resValue "string", "app_name", "VNSPM MBank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/vnspm_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        mdccmbankapp {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".mdccmbankapp"
+            versionName "1.0.0"
+            versionCode 1
+            resValue "string", "app_name", "MDCC MBank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/mdcc_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        nccsmbankapp {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".nccsmbankapp"
+            versionName "1.0.0"
+            versionCode 1
+            resValue "string", "app_name", "TNCCSL MPASSBOOK"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/ic_nccs_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+        motimbankapp {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".motimbankapp"
+            versionName "1.0.0"
+            versionCode 1
+            resValue "string", "app_name", "Moti Urban MBank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/ic_moti_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+
+
+        nagpursahakarimbankapp {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".nagpursahakarimbankapp"
+            versionName "1.0.0"
+            versionCode 1
+            resValue "string", "app_name", "Nagpur Sahakari MBank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/ic_launcher",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+        itparkbank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".itparkbank"
+            versionName "1.0.0"
+            versionCode 2
+            resValue "string", "app_name", "It park bank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/ic_launcher",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+        cucbmbank{
+            applicationId "com.trustbank"
+            applicationIdSuffix ".cucbmbank"
+            versionName "1.0.0"
+            versionCode 1
+            resValue "string", "app_name", "CUCB MBank"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/ic_cucb_logo",google_maps_key:"AIzaSyCLFw6IjAiZJifQlxQtdZuH839FyyUgfrg"
+            ]
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.core:core:1.3.2'
+    implementation 'androidx.vectordrawable:vectordrawable-animated:1.1.0'
+    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation files('libs/android-zoom-view.jar')
+    implementation files('libs/jsoup-1.6.0.jar')
+    implementation project(':library')
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.5.1'
+
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.github.bumptech.glide:annotations:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation project(':floatingbuttonlibrary')
+    implementation files('libs/jxl-2.6.12.jar')
+    implementation files('libs/itextg-5.5.8.jar')
+  //  implementation files('libs/aes-encryption-decryption.jar')
+
+    implementation "com.madgag.spongycastle:prov:1.54.0.0"
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.jakewharton:butterknife:10.0.0'
+
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.0'
+
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    implementation 'com.github.smart-fun:XmlToJson:1.1.1'
+    implementation 'com.google.android.play:core:1.8.3'
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+    implementation 'com.google.zxing:core:3.3.3'
+    implementation 'androidx.security:security-crypto:1.0.0'
+}

@@ -1,0 +1,9 @@
+<resources>
+<!--<string name="set_server_IP">https://59.97.236.37:8030</string>=====TRUST DEV VAPT Testing====-->
+<!--<string name="set_server_IP">https://59.97.236.37:4530</string> =====TRUST DEMO VAPT IP====-->
+<!-- <string name="set_server_IP">https://59.95.101.93:4530</string> =====TRUST DEMO VAPT IP====-->
+    <!--<string name="set_server_IP">http://117.218.140.121:1002</string> =====Live URL Sadhna====-->
+    <!--<string name="set_server_IP">http://59.97.236.37:122</string> =====Testing====-->
+    <string name="set_server_IP">https://59.95.101.93:8079</string> //=====trust bank VAPT====
+<!--<string name="set_server_IP">https://192.168.0.150:1993</string> //=====vipin local====-->
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <string name="set_server_IP">https://59.95.101.93:8079</string>--> <!--//== Trust Demo ==-->
+     <string name="set_server_IP">https://mbank.tnccsl.com:34104</string> <!--== TNCCSL LIVE  ==-->
+</resources>
